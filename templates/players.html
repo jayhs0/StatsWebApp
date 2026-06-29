@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+><Title>View Players</Title>
+</head>
+
+
+
+<body>
+
+    <h1>Player Stats</h1>
+
+    {% for name, player in players.items() %}
+
+        <p> {{ name }} - Games Played: {{player.get_games_played()}} Points: {{ player.get_points() }} Rebounds: {{ player.get_rebounds() }} Assists: {{ player.get_assists() }} Blocks: {{player.get_blocks()}} Steals: {{player.get_steals()}} </p>
+
+    {% endfor %}
+
+
+
+</body>
+
+</html>
